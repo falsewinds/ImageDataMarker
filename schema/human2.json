@@ -1,0 +1,145 @@
+[
+    {
+        "key": "head",
+        "name": "頭部",
+        "type": "rectangle",
+        "color": "green"
+    },
+    {
+        "key": "torso",
+        "name": "軀幹",
+        "branch": [
+            {
+                "key": "left",
+                "name": "左",
+                "color": "blue"
+            },
+            {
+                "key": "right",
+                "name": "右",
+                "color": "red"
+            }
+        ],
+        "items": [
+            {
+                "key": "shoudler",
+                "name": "肩膀",
+                "type": "oval"
+            },
+            {
+                "key": "waist",
+                "name": "腰",
+                "type": "point"
+            },
+            {
+                "key": "hip",
+                "name": "臀",
+                "type": "oval"
+            }
+        ]
+    },
+    {
+        "key": "limbs",
+        "name": "肢體",
+        "branch": [
+            {
+                "key": "left",
+                "name": "左",
+                "color": "blue"
+            },
+            {
+                "key": "right",
+                "name": "右",
+                "color": "red"
+            }
+        ],
+        "items": [
+            {
+                "key": "elbow",
+                "name": "手肘",
+                "type": "oval"
+            },
+            {
+                "key": "wrist",
+                "name": "手腕",
+                "type": "oval"
+            },
+            {
+                "key": "hand",
+                "name": "手",
+                "type": "polygon"
+            },
+            {
+                "key": "knee",
+                "name": "膝關節",
+                "type": "oval"
+            },
+            {
+                "key": "heel",
+                "name": "腳跟",
+                "type": "oval"
+            },
+            {
+                "key": "foot",
+                "name": "腳",
+                "type": "polygon"
+            }
+        ]
+    },
+    {
+        "key": "face",
+        "name": "臉部",
+        "color": "green",
+        "items": [
+            {
+                "key": "eye",
+                "name": "眼",
+                "type": "oval",
+                "branch": [
+                    {
+                        "key": "left",
+                        "name": "左",
+                        "color": "blue"
+                    },
+                    {
+                        "key": "right",
+                        "name": "右",
+                        "color": "red"
+                    }
+                ]
+            },
+            {
+                "key": "nose",
+                "name": "鼻子",
+                "type": "point"
+            },
+            {
+                "key": "mouth",
+                "name": "嘴巴",
+                "type": "polygon"
+            },
+            {
+                "key": "jaw",
+                "name": "下巴",
+                "type": "point"
+            },
+            {
+                "key": "ear",
+                "name": "耳",
+                "type": "polygon",
+                "branch": [
+                    {
+                        "key": "left",
+                        "name": "左",
+                        "color": "blue"
+                    },
+                    {
+                        "key": "right",
+                        "name": "右",
+                        "color": "red"
+                    }
+                ]
+            }
+        ]
+    }
+]
