@@ -1,18 +1,17 @@
 from canvaswindow import CanvasWindow
 
+maskalpha = 120
 win = CanvasWindow(
     caption="圖片資料檢視工具",
     icon="postage_stamp.ico",
-    translation={
-        "open_folder_title": "開啟圖片資料夾"
-    }
+    maskalpha=maskalpha,
+    readonly=True
 )
 
 win.bind("<Left>", lambda ev: win.show_image(-1))
 win.bind("<Right>", lambda ev: win.show_image(1))
 win.bind("<space>", lambda ev: win.show_image(1))
 
-maskalpha = 120
 def scroll(event):
     global maskalpha
     if event.num == 5 or event.delta == -120:
